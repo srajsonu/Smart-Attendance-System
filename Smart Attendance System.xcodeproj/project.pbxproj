@@ -9,14 +9,21 @@
 /* Begin PBXBuildFile section */
 		32E1E3CAE35C814F33AF21CD /* Pods_Smart_Attendance_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C478A242DF15A112F8C23588 /* Pods_Smart_Attendance_System.framework */; };
 		C466F4952404565A00A6A2CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C466F4942404565A00A6A2CF /* GoogleService-Info.plist */; };
+		C48258B32433BB85007CCB45 /* SecCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48258B12433BB85007CCB45 /* SecCollectionViewCell.swift */; };
+		C48258B42433BB85007CCB45 /* SecCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48258B22433BB85007CCB45 /* SecCollectionViewCell.xib */; };
+		C48258B72433C141007CCB45 /* DeptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48258B62433C141007CCB45 /* DeptViewController.swift */; };
+		C48258B92433C14F007CCB45 /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48258B82433C14F007CCB45 /* SecViewController.swift */; };
+		C48258BC2433C6EA007CCB45 /* DeptCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48258BA2433C6EA007CCB45 /* DeptCollectionViewCell.swift */; };
+		C48258BD2433C6EA007CCB45 /* DeptCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48258BB2433C6EA007CCB45 /* DeptCollectionViewCell.xib */; };
+		C48258C02433CE08007CCB45 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48258BE2433CE08007CCB45 /* StudentTableViewCell.swift */; };
+		C48258C12433CE08007CCB45 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48258BF2433CE08007CCB45 /* StudentTableViewCell.xib */; };
+		C48258C32433D136007CCB45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48258C22433D136007CCB45 /* HomeViewController.swift */; };
 		C4885C482403EF5E00B556B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885C472403EF5E00B556B9 /* AppDelegate.swift */; };
 		C4885C4A2403EF5E00B556B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885C492403EF5E00B556B9 /* SceneDelegate.swift */; };
-		C4885C4C2403EF5E00B556B9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885C4B2403EF5E00B556B9 /* HomeViewController.swift */; };
 		C4885C4F2403EF5E00B556B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4885C4D2403EF5E00B556B9 /* Main.storyboard */; };
 		C4885C512403EF6000B556B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4885C502403EF6000B556B9 /* Assets.xcassets */; };
 		C4885C542403EF6000B556B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4885C522403EF6000B556B9 /* LaunchScreen.storyboard */; };
 		C4885C5C2403F22400B556B9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885C5B2403F22400B556B9 /* SignInViewController.swift */; };
-		C4885C5E2403F50500B556B9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885C5D2403F50500B556B9 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,16 +31,23 @@
 		6DCFBCDDEDC47B1F972A8436 /* Pods-Smart Attendance System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Attendance System.debug.xcconfig"; path = "Target Support Files/Pods-Smart Attendance System/Pods-Smart Attendance System.debug.xcconfig"; sourceTree = "<group>"; };
 		C466F4942404565A00A6A2CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C478A242DF15A112F8C23588 /* Pods_Smart_Attendance_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Attendance_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48258B12433BB85007CCB45 /* SecCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecCollectionViewCell.swift; sourceTree = "<group>"; };
+		C48258B22433BB85007CCB45 /* SecCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecCollectionViewCell.xib; sourceTree = "<group>"; };
+		C48258B62433C141007CCB45 /* DeptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeptViewController.swift; sourceTree = "<group>"; };
+		C48258B82433C14F007CCB45 /* SecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
+		C48258BA2433C6EA007CCB45 /* DeptCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeptCollectionViewCell.swift; sourceTree = "<group>"; };
+		C48258BB2433C6EA007CCB45 /* DeptCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeptCollectionViewCell.xib; sourceTree = "<group>"; };
+		C48258BE2433CE08007CCB45 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		C48258BF2433CE08007CCB45 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
+		C48258C22433D136007CCB45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4885C442403EF5E00B556B9 /* Smart Attendance System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Attendance System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4885C472403EF5E00B556B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4885C492403EF5E00B556B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4885C4B2403EF5E00B556B9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4885C4E2403EF5E00B556B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4885C502403EF6000B556B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4885C532403EF6000B556B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4885C552403EF6000B556B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4885C5B2403F22400B556B9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		C4885C5D2403F50500B556B9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C48258B52433BB98007CCB45 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C48258B12433BB85007CCB45 /* SecCollectionViewCell.swift */,
+				C48258B22433BB85007CCB45 /* SecCollectionViewCell.xib */,
+				C48258BA2433C6EA007CCB45 /* DeptCollectionViewCell.swift */,
+				C48258BB2433C6EA007CCB45 /* DeptCollectionViewCell.xib */,
+				C48258BE2433CE08007CCB45 /* StudentTableViewCell.swift */,
+				C48258BF2433CE08007CCB45 /* StudentTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C4885C3B2403EF5E00B556B9 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +121,7 @@
 				C4885C522403EF6000B556B9 /* LaunchScreen.storyboard */,
 				C4885C552403EF6000B556B9 /* Info.plist */,
 				C466F4942404565A00A6A2CF /* GoogleService-Info.plist */,
+				C48258B52433BB98007CCB45 /* Cell */,
 			);
 			path = "Smart Attendance System";
 			sourceTree = "<group>";
@@ -101,9 +129,10 @@
 		C4AD0C242404E23A00F10A09 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C4885C4B2403EF5E00B556B9 /* HomeViewController.swift */,
 				C4885C5B2403F22400B556B9 /* SignInViewController.swift */,
-				C4885C5D2403F50500B556B9 /* ProfileViewController.swift */,
+				C48258B62433C141007CCB45 /* DeptViewController.swift */,
+				C48258B82433C14F007CCB45 /* SecViewController.swift */,
+				C48258C22433D136007CCB45 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,9 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4885C542403EF6000B556B9 /* LaunchScreen.storyboard in Resources */,
+				C48258B42433BB85007CCB45 /* SecCollectionViewCell.xib in Resources */,
+				C48258C12433CE08007CCB45 /* StudentTableViewCell.xib in Resources */,
 				C466F4952404565A00A6A2CF /* GoogleService-Info.plist in Resources */,
 				C4885C512403EF6000B556B9 /* Assets.xcassets in Resources */,
 				C4885C4F2403EF5E00B556B9 /* Main.storyboard in Resources */,
+				C48258BD2433C6EA007CCB45 /* DeptCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,10 +257,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4885C5C2403F22400B556B9 /* SignInViewController.swift in Sources */,
-				C4885C4C2403EF5E00B556B9 /* HomeViewController.swift in Sources */,
-				C4885C5E2403F50500B556B9 /* ProfileViewController.swift in Sources */,
 				C4885C482403EF5E00B556B9 /* AppDelegate.swift in Sources */,
+				C48258BC2433C6EA007CCB45 /* DeptCollectionViewCell.swift in Sources */,
+				C48258B92433C14F007CCB45 /* SecViewController.swift in Sources */,
 				C4885C4A2403EF5E00B556B9 /* SceneDelegate.swift in Sources */,
+				C48258C32433D136007CCB45 /* HomeViewController.swift in Sources */,
+				C48258B32433BB85007CCB45 /* SecCollectionViewCell.swift in Sources */,
+				C48258B72433C141007CCB45 /* DeptViewController.swift in Sources */,
+				C48258C02433CE08007CCB45 /* StudentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
