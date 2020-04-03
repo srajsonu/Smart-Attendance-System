@@ -15,7 +15,7 @@ class DeptViewController: UIViewController {
     let noOfItemsinARow : CGFloat = 2
     var cellGap : CGFloat = 10
     var sectionLRGap :CGFloat = 10
-    var gapCalculation : CGFloat = 0
+    var gapCalculation : CGFloat = 10
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -53,14 +53,14 @@ extension DeptViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         performSegue(withIdentifier: "SecVC", sender: self)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (collectionView.frame.size.width - gapCalculation)/noOfItemsinARow, height: (collectionView.frame.size.width - gapCalculation)/noOfItemsinARow)
+        return CGSize(width: (collectionView.frame.width / 2)-20, height: 150)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return cellGap
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: sectionLRGap , left: sectionLRGap, bottom: sectionLRGap + 15, right: sectionLRGap)
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
     
 }

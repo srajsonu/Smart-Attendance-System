@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 class HomeViewController: UIViewController {
 
@@ -19,6 +20,16 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func playButtonPressed(_ sender: UIBarButtonItem) {
+        //performSegue(withIdentifier: "VideoVC", sender: self)
+        if let path = Bundle.main.path(forResource: "netflix", ofType: "mp4") {
+            let video = AVPlayer(url: URL(fileURLWithPath: path))
+            let videoPlayer = AVPlayerViewController()
+            videoPlayer.player = video
+            
+            present(videoPlayer, animated: true) {
+                video.play()
+            }
+        }
     }
     
 }
@@ -32,7 +43,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 120
     }
     
 }

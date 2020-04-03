@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		32E1E3CAE35C814F33AF21CD /* Pods_Smart_Attendance_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C478A242DF15A112F8C23588 /* Pods_Smart_Attendance_System.framework */; };
 		C466F4952404565A00A6A2CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C466F4942404565A00A6A2CF /* GoogleService-Info.plist */; };
+		C471E83B24377A8900CA3128 /* netflix.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C471E83A24377A8900CA3128 /* netflix.mp4 */; };
 		C48258B32433BB85007CCB45 /* SecCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48258B12433BB85007CCB45 /* SecCollectionViewCell.swift */; };
 		C48258B42433BB85007CCB45 /* SecCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48258B22433BB85007CCB45 /* SecCollectionViewCell.xib */; };
 		C48258B72433C141007CCB45 /* DeptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48258B62433C141007CCB45 /* DeptViewController.swift */; };
@@ -30,6 +31,7 @@
 		4FDA6E7C30078F5CFA061D70 /* Pods-Smart Attendance System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Attendance System.release.xcconfig"; path = "Target Support Files/Pods-Smart Attendance System/Pods-Smart Attendance System.release.xcconfig"; sourceTree = "<group>"; };
 		6DCFBCDDEDC47B1F972A8436 /* Pods-Smart Attendance System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Attendance System.debug.xcconfig"; path = "Target Support Files/Pods-Smart Attendance System/Pods-Smart Attendance System.debug.xcconfig"; sourceTree = "<group>"; };
 		C466F4942404565A00A6A2CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C471E83A24377A8900CA3128 /* netflix.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = netflix.mp4; sourceTree = "<group>"; };
 		C478A242DF15A112F8C23588 /* Pods_Smart_Attendance_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Attendance_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48258B12433BB85007CCB45 /* SecCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecCollectionViewCell.swift; sourceTree = "<group>"; };
 		C48258B22433BB85007CCB45 /* SecCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		C4885C3B2403EF5E00B556B9 = {
 			isa = PBXGroup;
 			children = (
+				C471E83A24377A8900CA3128 /* netflix.mp4 */,
 				C4885C462403EF5E00B556B9 /* Smart Attendance System */,
 				C4885C452403EF5E00B556B9 /* Products */,
 				4F56E06B685E35E18E84B72F /* Pods */,
@@ -204,6 +207,7 @@
 				C4885C512403EF6000B556B9 /* Assets.xcassets in Resources */,
 				C4885C4F2403EF5E00B556B9 /* Main.storyboard in Resources */,
 				C48258BD2433C6EA007CCB45 /* DeptCollectionViewCell.xib in Resources */,
+				C471E83B24377A8900CA3128 /* netflix.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
