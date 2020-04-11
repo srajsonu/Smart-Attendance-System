@@ -12,9 +12,14 @@ class SecViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     let Sec: [String] = ["1A","1B","2A","2B","3A","3B","4A","4B"]
+    var Department: String?
+    var selectedSec: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(UINib(nibName: "SecCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SecCollectionViewCell")
+        self.navigationItem.title = Department!
+
+        print(Department!,"from dept")
     }
     
 }
@@ -42,7 +47,15 @@ extension SecViewController: UICollectionViewDelegate,UICollectionViewDataSource
         cell.layer.masksToBounds = false
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is HomeViewController {
+            let homeVC = segue.destination as? HomeViewController
+            homeVC?.Section = selectedSec
+            homeVC?.Department = Department
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedSec = Sec[indexPath.row]
         performSegue(withIdentifier: "HomeVC", sender: self)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

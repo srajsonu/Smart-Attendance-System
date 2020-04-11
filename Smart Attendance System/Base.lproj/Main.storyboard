@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="1725.5999999999999" y="131.78410794602701"/>
         </scene>
-        <!--SECTION-->
+        <!--Sec View Controller-->
         <scene sceneID="DwV-gY-CmX">
             <objects>
                 <viewController id="QRg-qR-jyD" customClass="SecViewController" customModule="Smart_Attendance_System" customModuleProvider="target" sceneMemberID="viewController">
@@ -153,7 +153,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SF6-ro-jPT"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SECTION" id="bCG-J8-gMa"/>
+                    <navigationItem key="navigationItem" id="bCG-J8-gMa"/>
                     <connections>
                         <outlet property="collectionView" destination="5i4-vx-Zsc" id="iZ9-v9-i07"/>
                         <segue destination="wog-eS-9NU" kind="show" identifier="HomeVC" id="9tZ-Fu-IsV"/>
@@ -163,7 +163,7 @@
             </objects>
             <point key="canvasLocation" x="2442" y="132"/>
         </scene>
-        <!--HOME-->
+        <!--Home View Controller-->
         <scene sceneID="03v-R9-s62">
             <objects>
                 <viewController id="wog-eS-9NU" customClass="HomeViewController" customModule="Smart_Attendance_System" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,7 +189,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KRB-Tc-86w"/>
                     </view>
-                    <navigationItem key="navigationItem" title="HOME" id="DsT-ha-4k1">
+                    <navigationItem key="navigationItem" id="DsT-ha-4k1">
                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="3Yf-QU-h1d">
                             <connections>
                                 <action selector="playButtonPressed:" destination="wog-eS-9NU" id="BVE-uK-wP1"/>

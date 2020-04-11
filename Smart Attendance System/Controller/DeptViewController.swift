@@ -12,10 +12,7 @@ class DeptViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     let Dept: [String] = ["ECE", "CSE", "IT", "AEIE", "EE", "ME", "CIVIL"]
-    let noOfItemsinARow : CGFloat = 2
-    var cellGap : CGFloat = 10
-    var sectionLRGap :CGFloat = 10
-    var gapCalculation : CGFloat = 10
+    var selectedDept: String?
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -49,7 +46,14 @@ extension DeptViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         cell.layer.masksToBounds = false
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.destination is SecViewController {
+               let secVC = segue.destination as? SecViewController
+               secVC?.Department = selectedDept
+           }
+       }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedDept = Dept[indexPath.row]
         performSegue(withIdentifier: "SecVC", sender: self)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
