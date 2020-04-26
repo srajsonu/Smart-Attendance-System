@@ -11,7 +11,7 @@ import UIKit
 class DeptViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    let Dept: [String] = ["ECE", "CSE", "IT", "AEIE", "EE", "ME", "CIVIL"]
+    let Dept: [String] = ["ECE", "CSE", "IT", "AIEIE", "EE", "ME", "CIVIL"]
     var selectedDept: String?
     override func viewDidLoad() {
         super.viewDidLoad()

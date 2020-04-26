@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     
     var Department: String?
     var Section: String?
+    let students: [String] = ["SONU RAJ", "NILESH SAURAV", "ANKIT KUMAR", "KUMAR VISHAL","AMIT KUMAR","ALOK RAJ","AMAN ANSARI"]
+    let roll: [Int] = [10900316053,10900316054,10900316055,10900316056,10900316057,10900316058,10900316059]
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var playButton: UIBarButtonItem!
     override func viewDidLoad() {
@@ -24,25 +26,42 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func playButtonPressed(_ sender: UIBarButtonItem) {
-        if let path = Bundle.main.path(forResource: "netflix", ofType: "mp4") {
-            let video = AVPlayer(url: URL(fileURLWithPath: path))
-            let videoPlayer = AVPlayerViewController()
-            videoPlayer.player = video
-            
-            present(videoPlayer, animated: true) {
-                video.play()
-            }
+        guard let _ = URL(string: "https://firebasestorage.googleapis.com/v0/b/myweb-a422d.appspot.com/o/videos%2F1.mp4?alt=media&token=ef349bec-97d0-45ad-bdf3-a03908993b72") else {
+            return
         }
+        guard let url = URL(string: "https://firebasestorage.googleapis.com/v0/b/myweb-a422d.appspot.com/o/videos%2Fnetflix.mp4?alt=media&token=7b9e36be-eba3-4942-a6d5-3ee04193e64b") else {
+            return
+        }
+        let video = AVPlayer(url: url)
+        let videoPlayer = AVPlayerViewController()
+        videoPlayer.player = video
+        
+        present(videoPlayer, animated: true) {
+            video.play()
+        }
+        
+//        if let path = Bundle.main.path(forResource: "netflix", ofType: "mp4") {
+//            let video = AVPlayer(url: URL(fileURLWithPath: path))
+//            let videoPlayer = AVPlayerViewController()
+//            videoPlayer.player = video
+//
+//            present(videoPlayer, animated: true) {
+//                video.play()
+//            }
+//        }
     }
     
 }
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return students.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentTableViewCell", for: indexPath) as! StudentTableViewCell
+        cell.Name.text = students[indexPath.row]
+        cell.Roll.text = "\(roll[indexPath.row])"
+        cell.Sec.text = Section
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
