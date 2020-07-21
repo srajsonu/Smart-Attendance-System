@@ -42,7 +42,7 @@
 		C48258BE2433CE08007CCB45 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		C48258BF2433CE08007CCB45 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
 		C48258C22433D136007CCB45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C4885C442403EF5E00B556B9 /* Smart Attendance System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Attendance System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4885C442403EF5E00B556B9 /* Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4885C472403EF5E00B556B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4885C492403EF5E00B556B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4885C4E2403EF5E00B556B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		C4885C452403EF5E00B556B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4885C442403EF5E00B556B9 /* Smart Attendance System.app */,
+				C4885C442403EF5E00B556B9 /* Attendance.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 			);
 			name = "Smart Attendance System";
 			productName = "Smart Attendance System";
-			productReference = C4885C442403EF5E00B556B9 /* Smart Attendance System.app */;
+			productReference = C4885C442403EF5E00B556B9 /* Attendance.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -421,9 +421,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hitachipaymentservices.Smart-Attendance-System";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Attendance;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -440,9 +440,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hitachipaymentservices.Smart-Attendance-System";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Attendance;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

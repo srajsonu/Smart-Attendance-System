@@ -26,10 +26,10 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func playButtonPressed(_ sender: UIBarButtonItem) {
-        guard let _ = URL(string: "https://firebasestorage.googleapis.com/v0/b/myweb-a422d.appspot.com/o/videos%2F1.mp4?alt=media&token=ef349bec-97d0-45ad-bdf3-a03908993b72") else {
+        guard let url = URL(string: "https://firebasestorage.googleapis.com/v0/b/myweb-a422d.appspot.com/o/videos%2FEverything%20you%20need%20to%20know%20about%20WWDC%202020%2C%20day%20one%20%E2%80%94%20Apple.mp4?alt=media&token=de0aee80-4ad9-4963-9aea-cadbd6a87585") else {
             return
         }
-        guard let url = URL(string: "https://firebasestorage.googleapis.com/v0/b/myweb-a422d.appspot.com/o/videos%2Fnetflix.mp4?alt=media&token=7b9e36be-eba3-4942-a6d5-3ee04193e64b") else {
+        guard let _ = URL(string: "https://firebasestorage.googleapis.com/v0/b/myweb-a422d.appspot.com/o/videos%2Fnetflix.mp4?alt=media&token=7b9e36be-eba3-4942-a6d5-3ee04193e64b") else {
             return
         }
         let video = AVPlayer(url: url)
